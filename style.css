@@ -7,6 +7,27 @@ html, body{
 	background: #1f253c;
 }
 
+.footer{
+	bottom: 0;
+	font-size: 10pt;
+	position: absolute;
+	width: 100%;
+	background: #1f253c;
+	border-top: 1px solid #1f253c;
+	line-height: 40px;
+}
+.footItem{
+	height: auto;
+	color: #f2f2f2;
+	padding-left: 30px;
+	margin: 15px;
+	font-style: normal;;
+	font-family: helvetica;
+}
+#right{
+	margin-right: 100px;
+	float:right;
+}
 .strand{
 	text-align: center;
 	white-space: nowrap;
@@ -74,6 +95,22 @@ html, body{
 	top: -4.66667px;
 	left: 1px;
 }
+.strand li:after{
+	content: "";
+	top: -14px;
+	left: 9px;
+	position: absolute;
+	width: 52px;
+	height: 18.66667px;
+	border-bottom: solid #222 2px;
+	border-radius: 50%;
+}
+.strand li:last-child:after{
+	content: none;
+}
+.strand li:first-child{
+	margin-left: 40px;
+}
 
 .heart{
 	position: absolute;
@@ -136,21 +173,3 @@ html, body{
 		opacity: 0;
 		transform: scale(15);
 	}
-
-
-.strand li:after{
-	content: "";
-	top: -14px;
-	left: 9px;
-	position: absolute;
-	width: 52px;
-	height: 18.66667px;
-	border-bottom: solid #222 2px;
-	border-radius: 50%;
-}
-.strand li:last-child:after{
-	content: none;
-}
-.strand li:first-child{
-	margin-left: 40px;
-}
